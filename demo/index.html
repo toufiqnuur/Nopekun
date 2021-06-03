@@ -26,6 +26,7 @@
   <script type="text/javascript" charset="utf-8">
     var tugas = firebase.firestore().collection('/tugas');
     tugas.get().then(function(snap) {
+      localStorage.setItem('snap',snap)
       console.log(snap)
     });
     
