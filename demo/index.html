@@ -11,12 +11,12 @@
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: API_KEY,
+      apiKey: "AIzaSyArSvmo--ANmG1UsDo_2aGLQTZ2m7UJ0_I",
       authDomain: "sendpik-tugas.firebaseapp.com",
       projectId: "sendpik-tugas",
       storageBucket: "sendpik-tugas.appspot.com",
-      messagingSenderId: SEND_ID,
-      appId: APP_ID
+      messagingSenderId: "518597828801",
+      appId: "1:518597828801:web:f162797044a09125c6f440"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -26,7 +26,7 @@
   <script type="text/javascript" charset="utf-8">
     var tugas = firebase.firestore().collection('/tugas');
     tugas.get().then(function(snap) {
-      alert(snap)
+      console.log(snap)
     });
     
   </script>
