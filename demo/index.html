@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+  </head>
+  <body>
+    
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: API_KEY,
+      authDomain: "sendpik-tugas.firebaseapp.com",
+      projectId: "sendpik-tugas",
+      storageBucket: "sendpik-tugas.appspot.com",
+      messagingSenderId: SEND_ID,
+      appId: APP_ID
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  
+  
+  </script>
+  <script type="text/javascript" charset="utf-8">
+    var tugas = firebase.firestore().collection('/tugas');
+    tugas.get().then(function(snap) {
+      alert(snap)
+    });
+    
+  </script>
+  </body>
+</html>
